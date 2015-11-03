@@ -1,0 +1,25 @@
++ What happens when you initialize a repository? Why do you need to do it?
+
+Git creates a .git folder. That folder is a hidden folder that will contain all the data
+related to commits, branches, ... Git stuff that defines the repository.
+
+This task is needed in order to convert a normal directory to a Git repository and be able
+to run Git commands in that "folder" (repository).
+
++ How is the staging area different from the working directory and the repository? What 
+value do you think it offers?
+
+Staging area handles all current files that we want to keep in our next commit. Then, in 
+the staging area, we put all the files from a working directory that we want to track in
+our repository.
+In the other hand, the working directory, contains all the files that are in an specific
+directory where a repository is located. This does not says that all files in a working
+directory are tracked in the repository.
+A repository handles all the files from a working directory for wich we want to track 
+version control. This allows commiting new changes of files and compare then the different
+versions.
+
+By adding items from working directory to staging area, and then commiting these files to
+the repository, we ensure that when we clone an specific repository, we copy all the files
+(and their versions) that are inside the repository and not all the files in a working 
+directory.
