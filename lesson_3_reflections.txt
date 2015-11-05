@@ -1,0 +1,5 @@
++ When would you want to use a remote repository rather than keeping all your work local?
+
+When you work with other people, it's useful to access the repository on the Internet, so you can access it anytime and anywhere without having to meet your collaborators.
+Also, when you work on different computers or different locations, could be useful to have your repository online, so  you can access your projects from anywhere. It could be also usefull to have your repositories online so you have a working copy alway son the Internet to access it and show to someone in any place.
+Using a local repository allows you to work on features/bugs that are not currently resolved, without pushing them to public. This allows you to keep your working progress local until you are finished and whant to share it publicly.
