@@ -9,3 +9,11 @@ Using a local repository allows you to work on features/bugs that are not curren
 It's useful to pull changes only when you really want to work o see the last changes on the repository. You may be working on an old version of a repository because you are fixin a bug introduced time ago. In that case you don't care about the newer versions of the repository.
 Also, if you are working on a branch that does not care about master or other branches, you may not need that branches. In that case is not necessary to keep all the repository up to date. You will ask for that branches when you need it.
 I supose that pulling changes in the branch that you are currently working on can break your current code having to merge it. If you don't need that changes at that moment, it's better to ask for them when you need them.
+
++ Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+Fork is a clone of a repository from a Github repository to another Github repository. Its how Github calls a clone within Github servers. This is useful when you want to clone a repository from Github to your Github account really quick.
+
+Clones are a copy of a particular repository to another repository. For example, copying a remote repository to you local machine is a clone or a local repository to another local repository it's also a clone. This is useful to copy a remote (or local) repository to your local machine for example.
+
+Branches are separate workflows in a same repository. It's really useful to separate different work in progress in differents parts of your repositories. It allows you to mantina a main MASTER branch where you commit only code that works, and have other branches that contains work in progress.
