@@ -16,10 +16,72 @@ In the other hand, the working directory, contains all the files that are in an 
 directory where a repository is located. This does not says that all files in a working
 directory are tracked in the repository.
 A repository handles all the files from a working directory for wich we want to track 
-version control. This allows commiting new changes of files and compare then the different
+version control. This allows committing new changes of files and compare then the different
 versions.
 
-By adding items from working directory to staging area, and then commiting these files to
+By adding items from working directory to staging area, and then committing these files to
 the repository, we ensure that when we clone an specific repository, we copy all the files
 (and their versions) that are inside the repository and not all the files in a working 
 directory.
+
++ How can you use the staging area to make sure you have one commit per logical change?
+
+Adding manually items to staging area allows you to add only the files that has a related
+logical change. If staging area did not exists, then you will be committing all the
+changes in the working directory to the repository every time you run a commit. Then, you
+could not decide wich changed files should be committed in the same commit command.
+
+So, in conclusion, staging area allows you to select files with a related logical change, 
+then create a commit with changes of a related logical change.
+
++ What are some situations when branches would be helpful in keeping your history
+organised? How would branches help?
+
+Branches could be helpful when I want to test different features and I still want to
+access a working version of my project. It could be also helpful when we want to test
+some features from a common starting point.
+
+Branches could be helpful also when working with multiple people to avoid all the people
+that is working on the same repository to commit changes to the same branch. This allow
+keep the repository more organised.
+
+Branches allows also separate different logical tasks or development in separated places.
+For example, in a game, you could create a branch for gameplay changes, another for GUI
+changes, another for game engine changes, etc. This allows finding specific changes more
+quickly by going directly to an specific branch, rather than searching from hundreds or
+thousands of commits of unrelated changed in an unique branch.
+
++ How do the diagrams help you visualize the branch structure?
+
+Diagrams allows me to visualize more clearly and graphically how all commits are related
+to other commits. Having a clear view of this allows you to know wich features are
+implemented in every branch or commit.
+ 
+This can help you to know if moving to another branch will allow you to work with 
+specific features that are introduced only in that branch. Also it allows where to start
+working to fix an specific issue by creating a branch from where that bug was introduced.
+
++ What is the result of merging two branches together? Why do we represent it in the
+diagram the way we do?
+
+The result is a commit that contains a combination of changes introduced in both branches.
+During the merge, changes in both branches are combined respecting deletes and insertions
+based on changes in the base commit. The base commit is the first common parent from both 
+branches. Based on this file, we can know if new changes should persist in the resultant
+branch or we should delete it. It could happen that some changes cannot be resolved 
+automatically and we need to check wich changes should preserve to avoid breaking the code
+in the resulting branch.
+
+We represent in the diagram as the child of both branches because the merge commit has as
+parent both branches. It contains all the changes from both branches.
+
++ What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Automatic merging allows you to speed up your merges by combining files without conflicts
+when you run a merge. When there is not conflict, it's unnecessary to look at all files to
+do a manual merge.
+
+Manual merging allows you to define the final version of a file based on the best 
+solution. When there is a conflict, it's not possible to automatically merging without 
+having the change to obtain an invalid result. In that case is when manual merging allows
+you to decide how a final should finally look to avoid break code or get unwanted results.
