@@ -23,3 +23,11 @@ Branches are separate workflows in a same repository. It's really useful to sepa
 
 This allows knowing where is the last updated point of the remote repository in your local copy. With that state you are able to merge your local copy with the remote changes.
 This can be useful to know how many commits has been done locally since last respository sync. This can be useful to check if the state of the remote stored locally points to the same commit as in the remote respository so you could know if a merge should be necessary. In that case, you could prefer doing a "git fetch" rather than a "git pull" that will merge all remote changes to you local repository and current branch. Fetch allows you to download remote repository and diff new remote changes to your current local changes.
+
++ How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+I would collaborate with other version control systems. It's necessary to use systems like git or Github to control your versions and share your work with others.
+If I would'nt have a VCS, I think I could try to put my projects on Dropbox or Google Drive. This will not be a good idea because it will be very difficult to control versions and will be impossible to merge changes that different people makes. If someone makes changes, these will ovewrite previous changes without taking them in account.
+Another possibility could be sharing code through email or other places and merge your local files from the ones you recived from email or other platforms. That will be very slow and this does not allow you to easily going back to branches or versions. You could mantain all versions in ZIP files or Folders, but will be really difficult to mantain all this manually.
+
+In conclusion, git and Github allows you to works easily and effectively by controlling the versions of your projects and collaborate with others.
