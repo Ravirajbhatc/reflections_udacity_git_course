@@ -31,3 +31,9 @@ If I would'nt have a VCS, I think I could try to put my projects on Dropbox or G
 Another possibility could be sharing code through email or other places and merge your local files from the ones you recived from email or other platforms. That will be very slow and this does not allow you to easily going back to branches or versions. You could mantain all versions in ZIP files or Folders, but will be really difficult to mantain all this manually.
 
 In conclusion, git and Github allows you to works easily and effectively by controlling the versions of your projects and collaborate with others.
+
++ When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+When you work from on new features, fixing complex bugs or testing things for example, it's a good pattern to start all this work in a separate branch that does not affect your master branch. Then, when you finish working on your branch and you are sure that this can be added to master branch, you can merge your changes to master branch. Working like this, allows you to have a always working version of your project in master branch. This pattern it's also really good for collaborative projects, where lots of people create their branches and safetely merges them to master when they have finished. This prevents breaking your project by commiting often to your master and allows also checking more clear what changes has been done by traversing each branches and identifying each branch with related logical changes.
+
+Directly marking changes on master branch can be good sometimes when you are sure you want to make a change that wont break your project. This could be appropiate by single person projects, but not for collaborative projectes. Event in single projects, I think it's recommended to keep your changes organized by branches to sepparate big changes in multiples commits.
